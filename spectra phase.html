@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Spectra Phase</title>
+<link rel="stylesheet" href="main.css">
+<link href="spectra phase.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	
+	<div id="theory">
+		<div class="proof" id="tc"></div>
+		<div id="jr"></div>
+		<div class="proof" id="th"></div>
+	</div>
+	
+
+	
+	<div id="control">
+		<div class="con" id="r_con">
+			<div class="lab">
+				<div class="color"></div>
+			</div>
+			<div class="drag">
+				<div class="dial" id="r_dial"></div>
+			</div>
+			<input type="text" placeholder="value">
+		</div>
+		<div class="con" id="g_con">
+			<div class="lab">
+				<div class="color"></div>
+			</div>
+			<div class="drag">
+				<div class="dial" id="g_dial"></div>
+			</div>
+			<input type="text" placeholder="value">
+		</div>
+		<div class="con" id="b_con">
+			<div class="lab">
+				<div class="color"></div>
+			</div>
+			<div class="drag">
+				<div class="dial" id="b_dial"></div>
+			</div>
+			<input type="text" placeholder="value">
+		</div>
+		<div class="con" id="o_con">
+			<div class="lab">
+				<div class="color"></div>
+			</div>
+			<div class="drag">
+				<div class="dial" id="o_dial"></div>
+			</div>
+			<input type="text" placeholder="value">
+		</div>
+	</div>
+	
+	<a id="report">PIXEL REPORT</a>
+	
+	<div id="ghost_report">
+		<div class="blanket">
+			<div class="ghost" id="ghost_tc"></div>
+		</div>
+		<div class="blanket">
+			<div class="ghost" id="ghost_jr"></div>
+		</div>
+		<div class="blanket">
+			<div class="ghost" id="ghost_th"></div>
+		</div>
+	</div>
+	
+	<div id="light_report">
+		<div class="shadow">
+			<div class="shade" id="light_tc"></div>
+		</div>
+		<div class="shadow">
+			<div class="shade" id="light_jr"></div>
+		</div>
+		<div class="shadow">
+			<div class="shade" id="light_th"></div>
+		</div>
+	</div>
+	
+	<div id="radial">
+		<div class="circle">
+			<canvas class="circ" id="circ_tc"></canvas>
+		</div>
+		<div class="circle">
+			<canvas class="circ" id="circ_jr"></canvas>
+		</div>
+		<div class="circle">
+			<canvas class="circ" id="circ_th"></canvas>
+		</div>
+	</div>
+	
+	<a id="color_info"></a>
+	
+
+<script src="main.js"></script>
+<script src="spectra phase.js"></script>
+</body>
+</html>

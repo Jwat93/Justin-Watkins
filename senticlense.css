@@ -1,0 +1,280 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+input{
+    margin: 0 auto;
+    padding: 5px;
+    display: flex;
+    width: 90%;
+    height: 2em;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.46);
+    color: #909090;
+    caret-color: #909090;
+    outline: none;
+    cursor: text;
+	font-size: 14px;
+	letter-spacing: 1px;
+	user-select: none;
+}
+
+input::placeholder{
+    color: #757575;
+	font-size: 14px;
+}
+
+input:focus:not(:-webkit-autofill),
+input:active:not(:-webkit-autofill){
+    caret-color: #909090;
+    color: #909090;
+}
+
+input:hover{
+    outline: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active{
+    -webkit-text-fill-color: #909090 !important;
+    caret-color: #909090 !important;
+    -webkit-box-shadow: 0 0 0px 1000px #000000 inset !important;
+    box-shadow: 0 0 0px 1000px #000000 inset !important;
+    transition: background-color 5000s ease-in-out 0s !important;
+	font-size: 14px;
+}
+
+input:-webkit-autofill{
+	font-size: 14px;
+}
+
+input:active{
+    background-color: #000000;
+	font-size: 14px;
+}
+
+::selection {
+	background: #1F79DB;
+	color: #dcdcdc;
+}
+
+hr{
+	display: flex;
+	width: 98%;
+	border-radius: 2px;
+	border: solid #757575 1px;
+}
+
+#conversation{
+	position: absolute;
+	top: 5em;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+#responses{
+	display: inline-block;
+	position: absolute;
+	white-space: normal;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	overflow-y: scroll;
+	height: calc(100vh - 8em);
+	color: #dcdcdc;
+	background: #202020;
+}
+
+#responses h2{
+	color: #757575;
+	font-size: 25px;
+	margin: 10px
+}
+
+#responses h3{
+	margin: 10px 10px 0;
+	color: #58CC6A;
+}
+
+#responses h4{
+	margin: 10px;
+	color: #757575;
+}
+
+#enter_text{
+	display: flex;
+	justify-content: center;
+	word-break: break-all;
+	align-items: center;
+	position: absolute;
+	height: 3em;
+	top: 0;
+	width: 100%;
+	user-select: none;
+	background: #353535;
+}
+
+#create{
+	display: flex;
+	position: relative;
+	margin: 0 auto;
+	width: 90%;
+	height: .75em;
+	padding: 10px;
+	border-radius: 3em;
+	border: solid #505050 1px;
+	background: #000000;
+	color: #909090;
+	user-select: none;
+}
+
+#report{
+	width: 97%;
+	margin: 0 auto;
+	overflow-x: scroll;
+	display: flex;
+	padding: 10px 0 0;
+	color: #757575;
+}
+
+#report hr{
+	border: solid #757575 1px;
+	border-radius: 2px;
+	margin: 3px auto 0 0;
+}
+
+#responses p{
+	white-space: nowrap;
+}
+
+#report a{
+	margin: 0;
+	padding: 0 3px;
+}
+
+.report{
+	margin: 0 15px 10px 0;
+	padding: 0 10px;
+	border: solid #757575 1px;
+	background: #75757525;
+	border-radius: 7px;
+}
+
+.port_sec{
+	width: 97%;
+}
+
+.rep_title{
+	position: relative;
+	display: inline-flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin: 0 10px;
+	color: #757575;
+}
+
+.submit{
+	display: inline-block;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	padding: 2px 6px;
+	border-radius: 5px;
+	font-size: 18px;
+	color: #909090;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+.rep_sec{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 12px 0 0;
+	color: #656565;
+}
+
+.rep_sec div{
+	display: flex;
+}
+
+.rep_sec p{
+	margin: 0 10px 0 0;
+}
+
+#res_title{
+	margin: 0 0 0 10px;
+	color: #909090;
+}
+
+.stat{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #757575;
+	border: solid #757575 1px;
+	padding: 0 5px;
+	margin: 0;
+	border-radius: 3px;
+	font-size: 15px;
+}
+
+.lab_num{
+	border: solid #505050 1px;
+	padding: 0 5px;
+	border-radius: 4px;
+}
+
+.lab{
+	display: flex;
+	position: relative;
+	align-items: center;
+	margin: 0 0 12px;
+}
+
+.lab .lab_num{
+	margin: 0 0 0 10px;
+}
+
+.lab p{
+	margin: 0 5px;
+	color: #505050;
+	font-size: 15px;
+}
+
+#words {
+	width: 97%;
+	margin: 0 auto;
+	overflow-x: scroll;
+	display: flex;
+	padding: 10px 0 0;
+	color: #757575;
+}
+
+#words hr {
+	width: 100%;
+	border: solid #757575 1px;
+	border-radius: 2px;
+	margin: 3px auto 0;
+}
+
+#words .report {
+	margin: 0 15px 10px 0;
+	padding: 0 10px;
+	border: solid #757575 1px;
+	background: #75757525;
+	border-radius: 7px;
+}
+
+#words a {
+	margin: 0;
+	padding: 0 3px;
+}
