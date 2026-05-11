@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="335" height="335" viewBox="0 0 335 335">
+  <path d="M116.3942465039,25.3675784965c15.9609813897-5.739844785,33.1681067678-8.8675784965,51.1057534961-8.8675784965,83.3949972198,0,151,67.6050027802,151,151s-67.6050027802,151-151,151S16.5,250.8949972198,16.5,167.5c0-16.3643356721,2.6031284376-32.1206781208,7.4178862608-46.8775282942" style="fill: none; stroke: #fff; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 33px;"/>
+  <line x1="43.5" y1="43.5" x2="167.5" y2="167.5" style="fill: none; stroke: #fff; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 33px;"/>
+  <circle cx="167.5" cy="167.5" r="23.9999999999" style="fill: none; stroke: #fff; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 33px;"/>
+  <g>
+    <path d="M116.3942465039,25.3675784965c15.9609813897-5.739844785,33.1681067678-8.8675784965,51.1057534961-8.8675784965,83.3949972198,0,151,67.6050027802,151,151s-67.6050027802,151-151,151S16.5,250.8949972198,16.5,167.5c0-16.3643356721,2.6031284376-32.1206781208,7.4178862608-46.8775282942" style="fill: none; stroke: #fff; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 14px;"/>
+    <line x1="43.5" y1="43.5" x2="167.5" y2="167.5" style="fill: none; stroke: #fff; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 14px;"/>
+    <circle cx="167.5" cy="167.5" r="23.9999999999" style="fill: #fff; stroke: #fff; stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 14px;"/>
+  </g>
+</svg>
