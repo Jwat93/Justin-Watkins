@@ -45,7 +45,7 @@ function createList() {
         </a>
 
         <a class="link" href="spectra phase.html">
-            <img class="icon" src="images/spectra_phase.png" alt="Spectra Phase">
+            <img class="icon" src="Images/Spectra Phase.png" alt="Spectra Phase">
             <p>Spectra Phase</p>
             <img class="decor" src="images/decor.png" alt="">
         </a>
