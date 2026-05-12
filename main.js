@@ -41,22 +41,22 @@ function createList() {
         <a class="link" href="blue_cel.html">
             <img class="icon" src="Images/blue_cel.svg" alt="Blu Cel">
             <p>Blue Cel</p>
-            <img class="decor" src="images/decor.png" alt="">
+            <img class="decor" src="Images/decor.png" alt="">
         </a>
 		<a class="link" href="spectra phase.html">
             <img class="icon" src="Images/Spectra Phase.png" alt="Spectra Phase">
             <p>Spectra Phase</p>
-            <img class="decor" src="images/decor.png" alt="">
+            <img class="decor" src="Images/decor.png" alt="">
         </a>
         <a class="link" href="senticlense.html">
             <img class="icon" src="senticlense_logo.png" alt="Senticlense">
             <p>Senticlense</p>
-            <img class="decor" src="images/decor.png" alt="">
+            <img class="decor" src="Images/decor.png" alt="">
         </a>
         <a class="link" href="aoi.html">
-            <img class="icon" src="images/aoi.png" alt="Agents of Influence">
+            <img class="icon" src="Images/aoi.png" alt="Agents of Influence">
             <p>Agents of Influence</p>
-            <img class="decor" src="images/decor.png" alt="">
+            <img class="decor" src="Images/decor.png" alt="">
         </a>
     `;
 
