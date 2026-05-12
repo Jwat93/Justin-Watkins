@@ -154,6 +154,11 @@ header{
 
 @media (min-width: 45em){
 	#list{
-		background: #00000050;
+		background: #00000070;
+	}
+	
+	#cover{
+		right: 0;
+		width: 30em;
 	}
 }
