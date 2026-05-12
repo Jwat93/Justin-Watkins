@@ -47,7 +47,7 @@ header{
 #menu, #menu_active{
 	display: block;
 	position: absolute;
-	right: 0;
+	right: 1.5em;
 	width: 3em;
 	height: .7em;
 	margin: .5em;
