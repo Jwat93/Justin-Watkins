@@ -6,7 +6,9 @@ body{
 	flex-direction: column;
 	height: 100vh;
 	margin: 0;
-	background: #252525;
+	min-width: 31em;
+	max-width: 100em;
+	margin: 0 auto;
 }
 
 header{
@@ -15,6 +17,7 @@ header{
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
+	min-width: 31em;
 	height: 5em;
 	top: 0;
 	background: #000000;
