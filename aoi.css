@@ -266,7 +266,7 @@ body{
 	position: absolute;
 	justify-content: space-around;
 	align-items: center;
-	width: 85%;
+	width: 90%;
 	max-width: 45em;
 	height: 20em;
 	padding: 5px 0;
@@ -277,11 +277,11 @@ body{
 	position: relative;
 	justify-content: center;
 	align-items: center;
-	border: solid #000000;
+	border: solid #000000 1px;
 	border-radius: 9px;
-	width: 30%;
-	height: 95%;
-	background: #ffffff90;
+	width: 31%;
+	height: 13em;
+	background: #00000050;
 }
 
 .aoi_img{
@@ -375,5 +375,9 @@ body{
 		letter-spacing: 3px;
 		font-size: 1.25rem;
 		max-width: 40em;
+	}
+	
+	.aoi_el{
+		height: 15em;
 	}
 }
