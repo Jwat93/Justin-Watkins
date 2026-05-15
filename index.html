@@ -7,6 +7,148 @@
 </head>
 
 <body>
+	<a href="#" id="initial">
+		<img id="init_img" src="#" alt="">
+	</a>
+	<div id="edu">
+		<div id="edu_cover">
+			<img id="cov_img" src="#" alt="">
+			<img id="name" src="#" alt="">
+			<p>Crafting end to end experiences for traditional and digital content creation.</p>
+		</div>
+		<div id="stat_wrap">
+			<div class="stat">
+				<img src="#" alt="">
+				<p class="stat_title">Bachelor's Degree</p>
+				<p class="label">Graphic Design</p>
+			</div>
+			<div class="stat">
+				<img src="#" alt="">
+				<p class="stat_title">Associate's Degree</p>
+				<p class="label">Digital Art</p>
+			</div>
+		</div>
+	</div>
+	<div id="con">
+		<div id="con_img">
+			<img id="con1" src="#" alt="">
+			<img id="con2" src="#" alt="">
+			<img id="con3" src="#" alt="">
+		</div>
+		<div id="con_nav">
+			<a class="nav" id="nav1">
+				<img src="Images/illustration.png" alt="">
+				<div class="mark" id="mark1"></div>
+			</a>
+			<a class="nav" id="nav2">
+				<img src="Images/Gallery_Graphic.svg" alt="">
+				<div class="mark" id="mark2"></div>
+			</a>
+			<a class="nav" id="nav3">
+				<img src="Images/Search_Icon_active.png" alt="">
+				<div class="mark" id="mark3"></div>
+			</a>
+		</div>
+		<div id="title_wrap">
+			<p class="title" id="title1">ILLUSTRATION</p>
+			<p class="title" id="title2">GRAPHIC DESIGN</p>
+			<p class="title" id="title3">DEVELOPMENT</p>
+		</div>
+		<div id="desc_wrap">
+			<p class="desc" id="desc1">
+				This is the description of the described skillset 1.
+			</p>
+			<p class="desc" id="desc2">
+				This is the description of the described skillset 2.
+			</p>
+			<p class="desc" id="desc3">
+				This is the description of the described skillset 3.
+			</p>
+		</div>
+	</div>
+	<div id="links">
+		<hr>
+		<a href="blue_cel.html" class="foot_link">
+			<img src="Images/blue_cel.svg" alt="">
+			<p>Blu Cel</p>
+		</a>
+		<a href="spectra phase.html" class="foot_link">
+			<img src="Images/Spectra Phase.png" alt="">
+			<p>Spectra Phase</p>
+		</a>
+		<a href="senticlense.html" class="foot_link">
+			<img src="senticlense_logo.png" alt="">
+			<p>Senticlense</p>
+		</a>
+		<a href="aoi.html" class="foot_link">
+			<img src="Images/aoi.png" alt="">
+			<p>Agents of Influence</p>
+		</a>
+	</div>
+	<script>
+		const initImg = document.getElementById("init_img");
+		const initialLink = document.getElementById("initial");
+		
+		const slides = [
+			{
+				src: "images/slide1.jpg",
+				href: "blu_cel.html"
+			},
+			{
+				src: "images/slide2.jpg",
+				href: "spectra phase.html"
+			},
+			{
+				src: "images/slide3.jpg",
+				href: "senticlense.html"
+			},
+			{
+				src: "images/slide4.jpg",
+				href: "aoi.html"
+			}
+		];
+		
+		let current = 0;
+		let isTransitioning = false;
+		
+		function setSlide(index) {
+			initImg.src = slides[index].src;
+			initialLink.href = slides[index].href;
+		}
+		
+		function nextSlide() {
+			
+			if (isTransitioning) return;
+			isTransitioning = true;
+			
+			initImg.style.opacity = "0";
+			
+			setTimeout(() => {
+				
+				initImg.style.display = "none";
+				
+				current = (current + 1) % slides.length;
+				setSlide(current);
+				
+				void initImg.offsetHeight;
+				
+				initImg.style.display = "flex";
+				
+				requestAnimationFrame(() => {
+					initImg.style.opacity = "1";
+				});
+				
+				setTimeout(() => {
+					isTransitioning = false;
+				}, 600);
+				
+			}, 600);
+		}
+		
+		setSlide(current);
+		
+		setInterval(nextSlide, 15000);
+	</script>
 	<script src="main.js"></script>
 </body>
 </html>

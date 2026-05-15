@@ -36,9 +36,11 @@ function createList() {
 
     const cover = document.createElement("div");
 	cover.id = "cover";
+	
+	document.body.style.overflow = "hidden";
 
     cover.innerHTML = `
-        <a class="link" href="blue_cel.html">
+        <a class="link" href="blu_cel.html">
             <img class="icon" src="Images/blue_cel.svg" alt="Blu Cel">
             <p>Blue Cel</p>
             <img class="decor" src="Images/decor.png" alt="">
@@ -67,11 +69,65 @@ function createList() {
 function removeList() {
     list?.remove();
     list = null;
+	document.body.style.overflow = "";
+}
+	
+const mobileQuery = window.matchMedia("(max-width: 45em)");
+
+const cons = document.querySelectorAll("#con_img img");
+const marks = document.querySelectorAll(".mark");
+const titles = document.querySelectorAll(".title");
+const descs = document.querySelectorAll(".desc");
+const navs = document.querySelectorAll(".nav");
+
+let activeIndex = 0;
+
+function applyState() {
+
+	const isMobile = mobileQuery.matches;
+
+	if (isMobile) {
+
+		cons.forEach((el, i) => {
+			el.classList.toggle("active", i === activeIndex);
+		});
+
+		marks.forEach((el, i) => {
+			el.classList.toggle("active", i === activeIndex);
+		});
+
+		titles.forEach((el, i) => {
+			el.classList.toggle("active", i === activeIndex);
+		});
+
+		descs.forEach((el, i) => {
+			el.classList.toggle("active", i === activeIndex);
+		});
+
+	} else {
+
+		/* IMPORTANT:
+		   Do NOT try to manage visibility here.
+		   CSS fully controls desktop state. */
+
+		cons.forEach(el => el.classList.remove("active"));
+		marks.forEach(el => el.classList.remove("active"));
+		titles.forEach(el => el.classList.remove("active"));
+		descs.forEach(el => el.classList.remove("active"));
+	}
 }
 
-// -----------------------------
-// MENU TOGGLE
-// -----------------------------
+navs.forEach((nav, index) => {
+	nav.addEventListener("click", () => {
+		activeIndex = index;
+		applyState();
+	});
+});
+
+window.addEventListener("resize", applyState);
+
+applyState();
+
 menu.addEventListener("click", (e) => {
     e.stopPropagation();
 
@@ -91,9 +147,6 @@ menu.addEventListener("click", (e) => {
     }
 });
 
-// -----------------------------
-// CLICK OUTSIDE CLOSE
-// -----------------------------
 document.addEventListener("click", (e) => {
 
     if (!menu.contains(e.target)) {
@@ -106,9 +159,6 @@ document.addEventListener("click", (e) => {
     }
 });
 
-// -----------------------------
-// RESIZE RESET
-// -----------------------------
 window.addEventListener("resize", () => {
 
     menu.id = "menu";
@@ -118,9 +168,6 @@ window.addEventListener("resize", () => {
     removeList();
 });
 
-// -----------------------------
-// BUILD DOM
-// -----------------------------
 menu.append(me1, me2);
 main.appendChild(mainImg);
 header.append(main, menu);
