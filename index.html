@@ -9,24 +9,37 @@
 <body>
 	<a href="#" id="initial">
 		<img id="init_img" src="#" alt="">
+		<p id="init_lab">BLU CEL</p>
 	</a>
 	<div id="edu">
 		<div id="edu_cover">
-			<img id="cov_img" src="#" alt="">
-			<img id="name" src="#" alt="">
-			<p>Crafting end to end experiences for traditional and digital content creation.</p>
+			<div id="edu_1">
+				<img id="cov_img" src="Images/tech cover.png" alt="">
+				<img id="name" src="#" alt="">
+			</div>
+			<div id="edu_2">
+				<p id="edu_title">Front End Design</p>
+				<p id="edu_desc">Results driven artist crafting end to end experiences for traditional and digital content creation. With 26 Years experience in illustration, 17 in graphic design and 7 years in front-end web devlopment/software engineering</p>
+			</div>
 		</div>
 		<div id="stat_wrap">
 			<div class="stat">
-				<img src="#" alt="">
+				<div class="s_wrap">
+					<img id="b_img" src="Images/storyboard_cover.png" alt="">
+				</div>
 				<p class="stat_title">Bachelor's Degree</p>
 				<p class="label">Graphic Design</p>
+				<p class="school">Full Sail University</p>
 			</div>
 			<div class="stat">
-				<img src="#" alt="">
+				<div class="s_wrap">
+					<img id="a_img" src="Images/associates_cover.png" alt="">
+				</div>
 				<p class="stat_title">Associate's Degree</p>
 				<p class="label">Digital Art</p>
+				<p class="school">Schoolcraft College</p>
 			</div>
+			<hr>
 		</div>
 	</div>
 	<div id="con">
@@ -54,15 +67,20 @@
 			<p class="title" id="title2">GRAPHIC DESIGN</p>
 			<p class="title" id="title3">DEVELOPMENT</p>
 		</div>
+		<div id="hr_wrap">
+			<hr id="hr1">
+			<hr id="hr2">
+			<hr id="hr3">
+		</div>
 		<div id="desc_wrap">
 			<p class="desc" id="desc1">
-				This is the description of the described skillset 1.
+				Traditional style through modern means. A background in classic illustration with a specialty in figure drawing and storyboarding fuels a solid foundation for digital and interactive expansion.
 			</p>
 			<p class="desc" id="desc2">
-				This is the description of the described skillset 2.
+				Born from adaptation, a digital landscape is built through traditional means. Mondern technology flows seemlessly with traditional style to produce effective foundation for pring and web based promotional material.
 			</p>
 			<p class="desc" id="desc3">
-				This is the description of the described skillset 3.
+				Utilizing all aspects of a full spectrum creation process. Software development and web design are crafted with a traditional approach fueled by modern technology. Digital Display and original material are achieved through the connection of established practices and state of the art procedure.
 			</p>
 		</div>
 	</div>
@@ -88,23 +106,28 @@
 	<script>
 		const initImg = document.getElementById("init_img");
 		const initialLink = document.getElementById("initial");
+		const initLab = document.getElementById("init_lab");
 		
 		const slides = [
 			{
-				src: "images/slide1.jpg",
-				href: "blu_cel.html"
+				src: "images/Storyboard_Image_Cover.png",
+				href: "blu_cel.html",
+				label: "BLU CEL"
 			},
 			{
-				src: "images/slide2.jpg",
-				href: "spectra phase.html"
+				src: "images/color analysis.png",
+				href: "spectra phase.html",
+				label: "SPECTRA PHASE"
 			},
 			{
-				src: "images/slide3.jpg",
-				href: "senticlense.html"
+				src: "images/senticlense_cover.png",
+				href: "senticlense.html",
+				label: "SENTICLENSE"
 			},
 			{
-				src: "images/slide4.jpg",
-				href: "aoi.html"
+				src: "images/Agents_Cover.png",
+				href: "aoi.html",
+				label: "AGENTS OF INFLUENCE"
 			}
 		];
 		
@@ -112,22 +135,29 @@
 		let isTransitioning = false;
 		
 		function setSlide(index) {
+			
 			initImg.src = slides[index].src;
 			initialLink.href = slides[index].href;
+			initLab.textContent = slides[index].label;
+			
 		}
 		
 		function nextSlide() {
 			
 			if (isTransitioning) return;
+			
 			isTransitioning = true;
 			
 			initImg.style.opacity = "0";
+			
+			initLab.style.opacity = "0";
 			
 			setTimeout(() => {
 				
 				initImg.style.display = "none";
 				
 				current = (current + 1) % slides.length;
+				
 				setSlide(current);
 				
 				void initImg.offsetHeight;
@@ -135,11 +165,17 @@
 				initImg.style.display = "flex";
 				
 				requestAnimationFrame(() => {
+					
 					initImg.style.opacity = "1";
+					
+					initLab.style.opacity = "1";
+					
 				});
 				
 				setTimeout(() => {
+					
 					isTransitioning = false;
+					
 				}, 600);
 				
 			}, 600);

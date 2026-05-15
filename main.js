@@ -60,6 +60,9 @@ function createList() {
             <p>Agents of Influence</p>
             <img class="decor" src="Images/decor.png" alt="">
         </a>
+
+		<hr>
+		<p id="establishment">THE ART OF JUSTIN WATKINS</p>
     `;
 
     list.appendChild(cover);

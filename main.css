@@ -164,6 +164,7 @@ header{
 	position: relative;
 	justify-content: center;
 	align-items: center;
+	overflow: hidden;
 	margin: 5em auto 0;
 	width: 100%;
 	aspect-ratio: 1 / 1.1;
@@ -175,19 +176,39 @@ header{
 	transition: opacity 0.6s ease;
 	display: flex;
 	position: absolute;
-	height: 100%;
 	min-width: 100%;
 	transform: translateX(50%);
 	right: 50%;
 	background: #151515;
+	filter: saturate(0);
+}
+
+#init_lab{
+	position: absolute;
+	bottom: 1em;
+	font-size: 2.25rem;
+	letter-spacing: 1px;
+	margin: 0;
+	padding: 0 .5em;
+	color: #dcdcdc;
+	border: solid #dcdcdc 2px;
+	border-radius: 3rem;
+	background: #00000025;
+}
+
+#init_lab:hover{
+	color: #ffffff;
+	border: solid #fffffff 2px;
+	background: #00000075;
 }
 
 #cov_img{
 	display: flex;
-	position: relative;
-	aspect-ratio: 1 / 1.3;
-	width: 100%;
+	position: absolute;
+	width: auto;
+	height: 100%;
 	background: #252525;
+	opacity: .2;
 }
 
 #edu{
@@ -198,6 +219,17 @@ header{
 	font-size: 20px;
 }
 
+#edu_title{
+	color: #2da4c8;
+}
+
+#edu_desc{
+	width: 94%;
+	margin: 10px auto 0;
+	color: #dcdcdc;
+	line-height: 1.5em;
+}
+
 #name{
 	display: flex;
 	position: relative;
@@ -206,31 +238,49 @@ header{
 	min-height: 5em;
 }
 
-#edu_cover p{
-	width: 95%;
-	margin: 2.5em auto 0;
-	color: #dcdcdc;
-	line-height: 2em;
-}
-
 #stat_wrap{
-	width: 95%;
+	width: 99%;
 	margin: 5em auto 0;
 	display: flex;
 }
 
-.stat{
+#stat_wrap hr{
+	display: none;
+	position: absolute;
+	transform: translateX(50%);
+	right: 50%;
+	bottom: -2.25em;
+	border: solid #505050 1px;
+	border-radius: 4px;
 	width: 95%;
+}
+
+.stat{
+	position: relative;
+	overflow-x: hidden;
+	width: 45%;
 	margin: 0 auto;
 }
 
-.stat img{
+.s_wrap{
 	display: flex;
-	aspect-ratio: 1 / 1;
-	width: 95%;
-	max-height: 30em;
-	margin: 10px auto;
-	border: solid #252525;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	height: 10em;
+	margin: 0 auto 10px;
+	overflow: hidden;
+	border: solid #505050 2px;
+	border-radius: 7px;
+}
+
+#a_img{
+	position: absolute;
+	height: 100%;
+}
+
+#b_img{
+	height: 100%;
 }
 
 .stat_title{
@@ -244,7 +294,7 @@ header{
 	white-space: nowrap;
 }
 
-.label{
+.label, .school{
 	display: flex;
 	text-align: center;
 	width: 95%;
@@ -252,6 +302,10 @@ header{
 	color: #909090;
 	font-weight: 100;
 	letter-spacing: 1px;
+}
+
+.label{
+	color: #505050;
 }
 
 #con{
@@ -265,7 +319,8 @@ header{
 	width: 95%;
 	margin: 0 auto;
 	aspect-ratio: 1 / 1;
-	border: solid #dcdcdc;
+	border: solid #757575;
+	border-radius: 7px;
 }
 
 #con_img img.active{
@@ -338,6 +393,10 @@ header{
 	display: flex;
 }
 
+.title.active{
+	justify-content: center;
+}
+
 #links{
 	display: inline-flex;
 	flex-wrap: wrap;
@@ -346,7 +405,8 @@ header{
 	right: 50%;
 	justify-content: space-around;
 	width: 95%;
-	margin: 3em auto 0;
+	max-width: 1920px;
+	margin: 0 auto 0;
 	padding-bottom: 3em;
 }
 
@@ -386,19 +446,65 @@ header{
 	width: 98%;
 	border: solid #505050 1px;
 	border-radius: 4px;
-	margin: 10em auto 2.5em;
+	margin: 3.5em auto 2.5em;
+}
+
+#edu_title{
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+	margin: 0 auto;
+}
+
+#list hr{
+	position: absolute;
+	bottom: 5em;
+	transform: translateX(50%);
+	right: 50%;
+	width: 95%;
+	border: solid #505050 1px;
+	border-radius: 2px;
+}
+
+#establishment{
+	position: absolute;
+	bottom: 2.75em;
+	color: #505050;
+	font-size: 1rem;
+	transform: translateX(50%);
+	right: 50%;
+	margin: 0;
+	white-space: nowrap;
+}
+
+#hr_wrap{
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	width: 95%;
+	margin: 0 auto;
+}
+
+#hr_wrap hr{
+	display: none;
+	width: 100%;
+	border: solid #505050 1px;
+	border-radius: 2px;
 }
 
 @media (min-width: 45em){
 	
 	#edu{
-		display: flex;
+		display: block;
 		height: auto;
 		max-height: none;
 	}
 	
 	#edu_cover{
-		display: none;
+		display: flex;
 		margin: 1.5em auto;
 		width: 30%;
 		height: 25em;
@@ -407,13 +513,12 @@ header{
 	}
 	
 	#stat_wrap{
-		margin: 1em auto;
+		margin: 3em auto;
 		width: 95%;
 	}
 	
-	#cov_img{
-		width: 100%;
-		aspect-ratio: 1 / 1;
+	#stat_wrap hr{
+		margin: 5em auto 0;
 	}
 
 	#list{
@@ -463,26 +568,66 @@ header{
 		width: 99%;
 		margin: 0 auto;
 	}
-	
-	#title_wrap{
-		width: 89%;
-	}
+
 	
 	.title, .desc{
-		margin: 0;
-		width: auto;
+		margin: 0 0;
+		width: 30%;
+	}
+	
+	.title{
+		justify-content: center;
 	}
 	
 	.desc{
-		width: 28%;
-		letter-spacing: normal;
-		border: solid #505050 1px;
-		border-radius: 5px;
-		margin: 10px auto 0;
-		padding: 7px;
+		margin: 10px 0;
+		font-size: 15px;
 	}
 	
 	#con_img{
 		display: flex;
+	}
+	
+	#b_img{
+		height: auto;
+		min-width: 100%;
+	}
+	
+	#edu_cover{
+		display: flex;
+		position: relative;
+		justify-content: space-between;
+		width: 95%;
+	}
+	
+	#edu_1, #edu_2{
+		display: block;
+		position: relative;
+		width: 48%;
+		max-width: none;
+		overflow: hidden;
+	}
+	
+	#cov_img{
+		position: absolute;
+		min-width: 110%;
+		transform: translateX(50%);
+		right: 50%;
+		height: 100%;
+		aspect-ratio: auto;
+	}
+	
+	#links hr{
+		margin: 2em auto 4em;
+	}
+	
+	#hr_wrap{
+		justify-content: space-between;
+		width: 100%;
+	}
+	
+	#hr_wrap hr{
+		display: flex;
+		width: 31%;
 	}
 }
