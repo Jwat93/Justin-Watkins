@@ -222,6 +222,7 @@ header{
 }
 
 #edu_title{
+	margin: 1em auto 0;
 	color: #2da4c8;
 }
 
@@ -232,29 +233,20 @@ header{
 	line-height: 1.5em;
 }
 
-#name{
-	display: flex;
-	position: relative;
-	width: 95%;
-	margin: -6.5em auto 2em;
-	min-height: 5em;
-}
-
 #stat_wrap{
 	width: 99%;
-	margin: 5em auto 0;
+	margin: 5em auto 2em;
 	display: flex;
 }
 
 #stat_wrap hr{
-	display: none;
 	position: absolute;
+	bottom: -10px;
+	width: 95%;
 	transform: translateX(50%);
 	right: 50%;
-	bottom: -2.25em;
 	border: solid #505050 1px;
-	border-radius: 4px;
-	width: 95%;
+	border-radius: 2px;
 }
 
 .stat{
@@ -283,6 +275,7 @@ header{
 
 #b_img{
 	height: 100%;
+	width: auto;
 }
 
 .stat_title{
@@ -312,8 +305,30 @@ header{
 
 #con{
 	width: 95%;
-	margin: 7em auto 0;
+	margin: 3.5em auto 0;
 	color: #dcdcdc;
+}
+
+.con_wrap{
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	width: 30%;
+	margin: 0 auto;
+	aspect-ratio: 1 / 1;
+}
+
+.con_wrap{
+	width: 100%;
+}
+
+#con1, #con2, #con3{
+	opacity: .5;
+}
+
+#cw2, #cw3{
+	display: none;
 }
 
 #con_img img{
@@ -457,7 +472,7 @@ header{
 	justify-content: center;
 	align-items: center;
 	font-size: 2rem;
-	margin: 0 auto;
+	margin: 1em auto 0;
 }
 
 #list hr{
@@ -497,6 +512,33 @@ header{
 	border-radius: 2px;
 }
 
+.nav_border, .nav_decor, .nav_center{
+	position: absolute;
+	transform: translate(50%, 50%);
+	right: 50%;
+	bottom: 50%;
+	width: 80%;
+	height: 80%;
+	border: solid #dcdcdc 1px;
+	border-radius: 5px;
+}
+
+.nav_decor{
+	width: 4em;
+	aspect-ratio: 1 / 1;
+	height: auto;
+	border-radius: 100%;
+	border: solid #dcdcdc 1px;
+}
+
+.nav_center{
+	display: flex;
+	position: absolute;
+	width: 2em;
+	height: 2em;
+	border-radius: 100%;
+}
+
 @media (min-width: 45em){
 	
 	#edu{
@@ -518,10 +560,6 @@ header{
 		margin: 3em auto;
 		width: 95%;
 	}
-	
-	#stat_wrap hr{
-		margin: 5em auto 0;
-	}
 
 	#list{
 		background: #00000070;
@@ -534,7 +572,7 @@ header{
 
 	#con_img img{
 		display: flex;
-		width: 30%;
+		position: absolute;	
 	}
 
 	.title,
@@ -571,6 +609,9 @@ header{
 		margin: 0 auto;
 	}
 
+	#desc_wrap{
+		width: 95%;
+	}
 	
 	.title, .desc{
 		margin: 0 0;
@@ -591,8 +632,7 @@ header{
 	}
 	
 	#b_img{
-		height: auto;
-		min-width: 100%;
+		height: 100%;
 	}
 	
 	#edu_cover{
@@ -610,6 +650,10 @@ header{
 		overflow: hidden;
 	}
 	
+	#edu_1{
+		border-radius: 12px;
+	}
+	
 	#cov_img{
 		position: absolute;
 		min-width: 110%;
@@ -617,6 +661,25 @@ header{
 		right: 50%;
 		height: 100%;
 		aspect-ratio: auto;
+		opacity: .5;
+		overflow: hidden;
+	}
+	
+	#name{
+		display: flex;
+		position: absolute;
+		transform: translate(50%, 50%);
+		justify-content: center;
+		align-items: center;
+		right: 50%;
+		bottom: 50%;
+		width: 100%;
+		height: 1.5em;
+		font-size: 5rem;
+		text-align: justify;
+		margin: 0;
+		background: #000000;
+		opacity: .25;
 	}
 	
 	#links hr{
