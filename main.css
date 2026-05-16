@@ -214,6 +214,7 @@ header{
 #edu{
 	display: block;
 	position: relative;
+	overflow: hidden;
 	width: 100%;
 	color: #dcdcdc;
 	font-size: 20px;
