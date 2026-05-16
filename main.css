@@ -194,6 +194,7 @@ header{
 	border: solid #dcdcdc 2px;
 	border-radius: 3rem;
 	background: #00000025;
+	transition: opacity 0.6s ease;
 }
 
 #init_lab:hover{
