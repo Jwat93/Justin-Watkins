@@ -331,8 +331,11 @@ header{
 	display: none;
 }
 
-#con_img img{
+#stat_wrap hr{
 	display: none;
+}
+
+#con_img img{
 	width: 95%;
 	margin: 0 auto;
 	aspect-ratio: 1 / 1;
@@ -572,6 +575,10 @@ header{
 	#cover{
 		right: 0;
 		width: 30em;
+	}
+	
+	#cw2, #cw3{
+		display: flex;
 	}
 
 	#con_img img{
