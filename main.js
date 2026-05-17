@@ -144,7 +144,7 @@ function initNavigation(){
 
 function initContentSystem(){
 
-	const mobileQuery = window.matchMedia("(max-width: 45em)");
+	const mobileQuery = window.matchMedia("(max-width: 44.9em)");
 
 	const wraps = document.querySelectorAll(".con_wrap");
 	const marks = document.querySelectorAll(".mark");
