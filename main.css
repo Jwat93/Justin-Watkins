@@ -309,8 +309,8 @@ header{
 	color: #dcdcdc;
 }
 
-.con_wrap{
-	display: flex;
+.con_wrap, .con_wrap.active{
+	display: none;
 	position: relative;
 	justify-content: center;
 	align-items: center;
@@ -323,12 +323,13 @@ header{
 	width: 100%;
 }
 
-#con1, #con2, #con3{
-	opacity: .5;
+.con_wrap.active{
+	display: flex;
+	width: 100%;
 }
 
-#cw2, #cw3{
-	display: none;
+#con1, #con2, #con3{
+	opacity: .75;
 }
 
 #stat_wrap hr{
