@@ -9,6 +9,10 @@
 	box-sizing: border-box;
 }
 
+* #app_title{
+	top: 10px;
+}
+
 body{
 	height: 100vh;
 	max-width: 1920px;
