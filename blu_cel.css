@@ -54,7 +54,7 @@ body{
 	height: 100vh;
 	transform: translateX(50%);
 	right: 50%;
-	z-index: 1;
+	z-index: 100;
 }
 
 #desc_back, #img_back{
@@ -656,8 +656,8 @@ body{
 	color: #dcdcdc;
 }
 
-#board_light, #eidt_light{
-	z-index: 11;
+#board_light, #edit_light{
+	z-index: 100;
 }
 
 #board_back, #edit_back{
