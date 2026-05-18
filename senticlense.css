@@ -84,9 +84,9 @@ hr{
 
 #responses{
 	display: inline-block;
-	position: absolute;
+	position: fixed;
 	white-space: normal;
-	top: 3em;
+	top: 8em;
 	bottom: 0;
 	right: 0;
 	left: 0;
