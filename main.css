@@ -10,7 +10,8 @@
 }
 
 * #app_title{
-	top: 10px;
+	top: 0;
+	margin: 35px auto;
 }
 
 body{
@@ -193,7 +194,7 @@ header{
 #init_lab{
 	position: absolute;
 	white-space: nowrap;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	margin: 0;
 	padding: 0 .5em;
 	color: #dcdcdc;
