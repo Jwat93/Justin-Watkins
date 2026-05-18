@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
             descLogo.src = "images/aoi_text.png";
         } else {
             // Below 45em
-            descLogo.src = "images/agents_text.png";
+            descLogo.src = "images/agent_short.png";
         }
     }
 
