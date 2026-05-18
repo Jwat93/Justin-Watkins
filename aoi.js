@@ -5,18 +5,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function updateLogoSource() {
         if (window.matchMedia("(min-width: 35em)").matches) {
-            // 45em and wider
             descLogo.src = "images/aoi_text.png";
         } else {
-            // Below 45em
             descLogo.src = "images/agent_short.png";
         }
     }
 
-    // Run on load
     updateLogoSource();
 
-    // Run whenever browser is resized
     window.addEventListener("resize", updateLogoSource);
 });
 
@@ -25,10 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	const apparel = document.getElementById("apparel");
 	const appCover = document.getElementById("app_cover");
 	const appTitle = document.getElementById("app_title");
-
-	/* -------------------------
-	   MOUSE ENTER
-	------------------------- */
 
 	apparel.addEventListener("mouseenter", () => {
 
@@ -63,10 +55,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 		apparel.appendChild(aoiList);
 	});
-
-	/* -------------------------
-	   MOUSE LEAVE
-	------------------------- */
 
 	apparel.addEventListener("mouseleave", () => {
 
