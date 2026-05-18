@@ -84,11 +84,11 @@ hr{
 	display: inline-block;
 	position: absolute;
 	white-space: normal;
+	top: 3em;
 	bottom: 0;
 	right: 0;
 	left: 0;
 	overflow-y: scroll;
-	height: calc(100vh - 8em);
 	color: #dcdcdc;
 	background: #202020;
 }
