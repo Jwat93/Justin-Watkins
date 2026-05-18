@@ -5,6 +5,10 @@
     display: none;
 }
 
+*{
+	box-sizing: border-box;
+}
+
 body{
 	height: 100vh;
 	max-width: 1920px;
