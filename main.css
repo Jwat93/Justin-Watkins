@@ -294,14 +294,14 @@ header{
 }
 
 .stat_title{
-	display: flex;
+	display: inline-flex;
 	text-align: left;
+	white-space: nowrap;
 	color: #2da4c6;
-	font-size: 25px;
+	font-size: 20px;
 	letter-spacing: 1px;
 	margin: 5px auto 5px 2.5%;
 	width: 40%;
-	white-space: nowrap;
 }
 
 .label, .school{
@@ -315,7 +315,12 @@ header{
 }
 
 .label{
+	font-size: 17px;
 	color: #505050;
+}
+
+.school{
+	font-size: 17px;
 }
 
 #con{
