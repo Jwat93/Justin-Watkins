@@ -18,7 +18,6 @@ body{
 	align-items: center;
 	width: 100%;
 	height: 5em;
-	min-width: 31em;
 	margin: 5em 0 auto;
 	background: #000000;
 	filter: saturate(1);
@@ -114,7 +113,6 @@ body{
 	top: 10em;
 	width: 100%;
 	max-width: 45em;
-	min-width: 31em;
 	transform: translateX(50%);
 	right: 50%;
 	height: calc(100vh - 10em);
@@ -648,7 +646,6 @@ body{
 	bottom: 0;
 	left: 0;
 	overflow: hidden;
-	min-width: 31em;
 }
 
 #board_light, #edit_light{
