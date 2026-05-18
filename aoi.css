@@ -294,7 +294,7 @@ body{
 	max-height: 95%;
 }
 
-@media (min-width: 45em){
+@media (min-width: 980px){
 	#intro{
 		display: flex;
 		margin: 5em auto 0;
