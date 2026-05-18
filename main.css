@@ -294,24 +294,26 @@ header{
 }
 
 .stat_title{
-	display: inline-flex;
+	display: inline-block;
 	text-align: left;
 	white-space: nowrap;
 	color: #2da4c6;
 	font-size: 20px;
 	letter-spacing: 1px;
-	margin: 5px auto 5px 2.5%;
-	width: 40%;
+	margin: 5px auto;
+	text-overflow: ellipsis;
+	overflow: hidden;
 }
 
 .label, .school{
-	display: flex;
+	display: inline-flex;
 	text-align: center;
 	width: 95%;
 	margin: 5px auto;
 	color: #909090;
 	font-weight: 100;
 	letter-spacing: 1px;
+	white-space: nowrap;
 }
 
 .label{
