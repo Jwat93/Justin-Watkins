@@ -106,7 +106,7 @@ header{
 	position: fixed;
 	top: 5em;
 	width: 100%;
-	bottom: 0;
+	height: calc(100vh - 5em);
 	background: #000000;
 	color: #ffffff;
 }
@@ -547,7 +547,7 @@ header{
 	display: none;
 }
 
-@media (min-width: 45em){
+@media (min-width: 980px){
 	
 	#edu{
 		display: block;
