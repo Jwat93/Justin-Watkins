@@ -5,9 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function updateLogoSource() {
         if (window.matchMedia("(min-width: 35em)").matches) {
-            descLogo.src = "images/aoi_text.png";
+            descLogo.src = "Images/aoi_text.png";
         } else {
-            descLogo.src = "images/agent_short.png";
+            descLogo.src = "Images/agent_short.png";
         }
     }
 
