@@ -188,7 +188,8 @@ header{
 
 #init_lab{
 	position: absolute;
-	font-size: 2.25rem;
+	white-space: nowrap;
+	font-size: 2rem;
 	letter-spacing: 1px;
 	margin: 0;
 	padding: 0 .5em;
@@ -724,4 +725,8 @@ header{
 		display: flex;
 		width: 31%;
 	}
+	
+	#con_nav:hover a{
+	border: solid #909090;
+}
 }
