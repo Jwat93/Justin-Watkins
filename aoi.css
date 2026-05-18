@@ -191,13 +191,20 @@ body{
 	margin: 1em auto;
 	border-radius: 10px;
 	border: solid #757575 1px;
+	background: #ffffff;
 }
 
-.cov img{
+#cov_1 img{
 	position: absolute;
 	width: 100%;
 	aspect-ratio: 1 / 1;
 	background: #ffffff;
+}
+
+#cov_2 img{
+	width: 100%;
+	height: auto;
+	aspect-ratio: none;
 }
 
 .cov p{
