@@ -202,7 +202,7 @@ body{
 	cursor: default;
 }
 
-.empty_img, #story_img{
+.empty_img, #story_img, #upload_img{
 	display: flex;
 	position: relative;
 	justify-content: center;
@@ -216,7 +216,6 @@ body{
 	height: 1em;
 	min-height: 1em;
 	max-height: 1em;
-	padding: 0 5px 7px;
 	background: #000000;
 	color: #ffffff;
 	border-radius: 100%;
