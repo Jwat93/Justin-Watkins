@@ -17,8 +17,12 @@ html, body{
 }
 
 body{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	bottom: 0;
     background: #000000;
-	margin: 5.5em auto 0;
+	margin: 5em auto 0;
 	border-top: solid #252525 2px;
 }
 
@@ -67,10 +71,6 @@ body{
 	border: solid #505050 2px;
 	border-radius: 5px;
 	margin: .25em;
-}
-
-.ghost{
-	border: solid red 2px;
 }
 
 #jr_back, #tc_back, #th_back{

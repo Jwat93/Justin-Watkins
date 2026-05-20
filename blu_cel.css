@@ -598,14 +598,16 @@ body{
 	justify-content: center;
 	align-items: center;
 	width: 30%;
+	height: 4em;
 	border: solid #252525 2px;
 	border-radius: 5px;
 	color: #FFFFFF;
 	filter: saturate(0);
 	cursor: pointer;
-	font-size: 20px;
+	font-size: 15px;
 	margin: .75em 0 0;
 	overflow: hidden;
+	white-space: nowrap;
 }
 
 .def:hover{
@@ -614,6 +616,7 @@ body{
 
 .def img{
 	position: absolute;
+	min-height: 100%;
 	width: 100%;
 	background: #505050;
 }
