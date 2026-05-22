@@ -207,19 +207,14 @@ body{
 	position: relative;
 	justify-content: center;
 	align-items: center;
-	font-size: 3rem;
-	margin: .25em 0 0;
-	aspect-ratio: 1 / 1;
-	width: 1em;
-	min-width: 1em;
-	max-width: 1em;
-	height: 1em;
-	min-height: 1em;
-	max-height: 1em;
 	background: #000000;
-	color: #ffffff;
+	color: #dcdcdc;
+	width: 2em;
+	height: 2em;
 	border-radius: 100%;
-	user-select: none;
+	font-size: 2rem;
+	margin: 10px auto 0;
+	padding: 0 0 5px;
 }
 
 .content, .board_anchor{
