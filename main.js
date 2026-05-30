@@ -1,5 +1,19 @@
 // JavaScript Document
 
+function setFavicon(src) {
+    let favicon = document.querySelector("link[rel*='icon']");
+
+    if (!favicon) {
+        favicon = document.createElement("link");
+        favicon.rel = "icon";
+        document.head.appendChild(favicon);
+    }
+
+    favicon.href = src;
+}
+
+setFavicon("Images/Justin Watkins.png");
+
 document.addEventListener("DOMContentLoaded", () => {
 
 	const scripts = document.querySelectorAll("script[src]");
