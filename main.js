@@ -12,7 +12,7 @@ function setFavicon(src) {
     favicon.href = src;
 }
 
-setFavicon("Images/Justin Watkins.png");
+setFavicon("Images/Jw_Icon.png");
 
 document.addEventListener("DOMContentLoaded", () => {
 
