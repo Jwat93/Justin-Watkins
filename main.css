@@ -446,22 +446,21 @@ header{
 	position: relative;
 	flex-wrap: wrap;
 	width: 100%;
+	min-height: 25em;
 	margin: 2em auto;
-	padding: 2em 0 0;
+	padding: 2em 0 4em;
 }
-
-
 
 .foot_link{
 	display: flex;
 	position: relative;
 	justify-content: center;
 	align-items: center;
-	width: 38%;
+	width: 40%;
+	margin: 1em auto 3em;
 	aspect-ratio: 1 / 1;
 	border: solid #909090 2px;
 	border-radius: 100%;
-	margin: 1em auto 2em;
 }
 
 .foot_link img{
