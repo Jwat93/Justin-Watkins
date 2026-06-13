@@ -722,7 +722,11 @@ header{
 	
 	#links hr{
 		width: 98%;
-		margin: 2em auto 4em;
+		margin: 0 auto 4em;
+	}
+	
+	.link{
+		margin: 1em auto 0;
 	}
 	
 	#hr_wrap{
