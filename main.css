@@ -109,6 +109,7 @@ header{
 	position: fixed;
 	top: 5em;
 	width: 100%;
+	min-height: 28em;
 	bottom: 0;
 	background: #000000;
 	color: #ffffff;
