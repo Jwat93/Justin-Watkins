@@ -450,6 +450,7 @@ header{
 	right: 50%;
 	justify-content: space-around;
 	width: 95%;
+	min-width: 31em;
 	max-width: 1920px;
 	margin: 0 auto 0;
 	padding-bottom: 3em;
