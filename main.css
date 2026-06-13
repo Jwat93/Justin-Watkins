@@ -443,25 +443,22 @@ header{
 }
 
 #links{
-	display: inline-flex;
+	display: flex;
+	position: relative;
 	flex-wrap: wrap;
-	position: absolute;
-	transform: translateX(50%);
-	right: 50%;
-	justify-content: space-around;
-	width: 95%;
-	min-width: 31em;
-	max-width: 1920px;
-	margin: 0 auto 0;
-	padding: 6em 0 0;
+	width: 100%;
+	margin: 2em auto;
+	padding: 2em 0 0;
 }
+
+
 
 .foot_link{
 	display: flex;
 	position: relative;
 	justify-content: center;
 	align-items: center;
-	width: 40%;
+	width: 38%;
 	aspect-ratio: 1 / 1;
 	border: solid #909090 2px;
 	border-radius: 100%;
@@ -489,15 +486,14 @@ header{
 }
 
 #links hr{
-	display: flex;
 	position: absolute;
-	top: 0;
+	border: solid #454545 1px;
+	border-radius: 2px;
+	width: 95%;
 	transform: translateX(50%);
 	right: 50%;
-	width: 94%;
-	border: solid #505050 1px;
-	border-radius: 4px;
-	margin: 3.5em auto 2.5em;
+	margin: 0;
+	top: 10px;
 }
 
 #edu_title{
@@ -727,6 +723,7 @@ header{
 	}
 	
 	#links hr{
+		width: 98%;
 		margin: 2em auto 4em;
 	}
 	
