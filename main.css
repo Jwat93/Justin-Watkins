@@ -462,7 +462,7 @@ header{
 	aspect-ratio: 1 / 1;
 	border: solid #909090 2px;
 	border-radius: 100%;
-	margin: 1em auto 3em;
+	margin: 1em auto 2em;
 }
 
 .foot_link img{
@@ -504,7 +504,7 @@ header{
 
 #list hr{
 	position: absolute;
-	bottom: 5em;
+	bottom: 3.75em;
 	transform: translateX(50%);
 	right: 50%;
 	width: 95%;
@@ -514,7 +514,7 @@ header{
 
 #establishment{
 	position: absolute;
-	bottom: 2.75em;
+	bottom: 1.5em;
 	color: #505050;
 	font-size: 1rem;
 	transform: translateX(50%);

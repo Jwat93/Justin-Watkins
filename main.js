@@ -148,6 +148,18 @@ function initNavigation(){
 
 		removeList();
 	});
+		
+	function closeMenu() {
+
+		menu.id = "menu";
+		me1.id = "me1";
+		me2.id = "me2";
+		
+		removeList();
+	}
+		
+	window.addEventListener("resize", closeMenu);
+	window.addEventListener("orientationchange", closeMenu);
 
 	menu.append(me1, me2);
 	main.appendChild(mainImg);
