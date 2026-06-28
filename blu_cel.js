@@ -1,9 +1,5 @@
 // JavaScript Document
 
-// -----------------------------
-// NAV
-// -----------------------------
-
 document.getElementById("upload").onclick = () => {
     up.style.display = "block";
     gal.style.display = "none";
@@ -21,10 +17,6 @@ document.getElementById("storyboards").onclick = () => {
     gal.style.display = "none";
     stry.style.display = "block";
 };
-
-// -----------------------------
-// CORE
-// -----------------------------
 
 const upImg = document.getElementById("up_con");
 const upWrap = document.getElementById("gal");
@@ -59,10 +51,6 @@ document.addEventListener("click", (e) => {
         renderLightbox(item);
     }
 });
-
-// -----------------------------
-// GALLERY STATE
-// -----------------------------
 
 function updateGalleryState(gallery, emptyId, uploadSelector = null) {
     const hasItems = gallery.querySelector(".item");
@@ -104,10 +92,6 @@ function updateGalleryAlignment() {
     upWrap.style.alignItems = hasItems ? "flex-start" : "center";
     upWrap.style.justifyContent = hasItems ? "flex-start" : "center";
 }
-
-// -----------------------------
-// FILE UPLOAD
-// -----------------------------
 
 fileInput.addEventListener("change", () => {
     const files = Array.from(fileInput.files);
@@ -165,10 +149,6 @@ fileInput.addEventListener("change", () => {
 
     fileInput.value = "";
 });
-
-// -----------------------------
-// LIGHTBOX (FULL EDIT VERSION)
-// -----------------------------
 
 function renderLightbox(item) {
     document.getElementById("img_light")?.remove();
@@ -374,10 +354,6 @@ function renderLightbox(item) {
     document.body.appendChild(imgLight);
 }
 
-// -----------------------------
-// CLICK HANDLING
-// -----------------------------
-
 upWrap.addEventListener("click", (e) => {
 
     if (e.target.closest("#upload_img") || e.target.closest(".empty_img")) {
@@ -445,10 +421,7 @@ storyCon.onclick = () => {
 
     const gallery = document.createElement("div");
     gallery.id = "edit_gallery";
-
-    // -----------------------------
-    // CLONE ITEMS SAFELY WITH INDEX
-    // -----------------------------
+	
     const sourceItems = document.querySelectorAll("#gal .item");
 
     sourceItems.forEach((item) => {
@@ -467,41 +440,32 @@ storyCon.onclick = () => {
 
     const getItems = () => Array.from(gallery.querySelectorAll(".item"));
 
-function updateUI() {
-    const selected = gallery.querySelectorAll(".item.selected");
-    const existing = document.getElementById("create_story");
-    const hasItems = gallery.querySelector(".item");
-
-    // -----------------------------
-    // LAYOUT RULE (BASED ON ITEMS EXISTING)
-    // -----------------------------
-    if (hasItems) {
-        gallery.style.justifyContent = "flex-start";
-        gallery.style.alignItems = "flex-start";
-    } else {
-        gallery.style.justifyContent = "center";
-        gallery.style.alignItems = "center";
-    }
-
-    // -----------------------------
-    // UI RULE (BASED ON SELECTION)
-    // -----------------------------
-    if (selected.length) {
-        if (!existing) {
-            const btn = document.createElement("a");
-            btn.id = "create_story";
-            btn.textContent = "CREATE STORY";
-            btn.onclick = createStoryHandler;
-            con.appendChild(btn);
-        }
-    } else {
-        existing?.remove();
-    }
-}
-
-    // -----------------------------
-    // SELECTION SYSTEM
-    // -----------------------------
+	function updateUI() {
+		const selected = gallery.querySelectorAll(".item.selected");
+		const existing = document.getElementById("create_story");
+		const hasItems = gallery.querySelector(".item");
+		
+		if (hasItems) {
+			gallery.style.justifyContent = "flex-start";
+			gallery.style.alignItems = "flex-start";
+		} else {
+			gallery.style.justifyContent = "center";
+			gallery.style.alignItems = "center";
+		}
+			
+			if (selected.length) {
+			if (!existing) {
+			const btn = document.createElement("a");
+			btn.id = "create_story";
+			btn.textContent = "CREATE STORY";
+			btn.onclick = createStoryHandler;
+			con.appendChild(btn);
+		}
+		} else {
+			existing?.remove();
+		}
+	}
+	
     gallery.addEventListener("click", (e) => {
         const item = e.target.closest(".item");
         if (!item) return;
@@ -539,10 +503,7 @@ function updateUI() {
 
         updateUI();
     });
-
-    // -----------------------------
-    // CREATE STORY (FIXED SCOPE)
-    // -----------------------------
+	
     function createStoryHandler() {
         const display = document.getElementById("display");
         if (!display) return;

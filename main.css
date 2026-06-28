@@ -43,15 +43,25 @@ header{
 	cursor: pointer;
 	transition: ease all .5s;
 	overflow: hidden;
+	border: solid #ffffff00 1px;
+	outline: none;
 }
 
 #main:hover{
 	border: solid #ffffff 1px;
+	outline: none;
+}
+
+#main:active{
+	outline: none;
+	border: none;
 }
 
 #main img{
 	width: 200%;
 	margin: 0 0 4em;
+	outline: none;
+	border: none;
 }
 
 #menu, #menu_active{

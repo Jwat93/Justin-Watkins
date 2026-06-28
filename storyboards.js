@@ -915,6 +915,8 @@ function play() {
 	document.getElementById("backward").style.display = "none";
 	document.getElementById("play_board").style.display = "none";
 	document.getElementById("exit_board").style.display = "none";
+	boardRateEl.style.background = "";
+	boardRateEl.style.color = "";
 
     state.interval = setInterval(() => {
         state.index++;
@@ -1075,6 +1077,8 @@ state.rateLabel = opt.text;
 restartIfPlaying();
 restore(state.rateLabel);
 					boardRateEl.style.height = "";
+					boardRateEl.style.background = "";
+					boardRateEl.style.color = "";
                 };
 
                 boardRateEl.appendChild(p);
@@ -1089,6 +1093,8 @@ restore(state.rateLabel);
 document.addEventListener("click", e => {
     if (!boardRateEl.contains(e.target)) {
         restore(state.rateLabel);
+		boardRateEl.style.background = "";
+		boardRateEl.style.color = "";
     }
 });
 
