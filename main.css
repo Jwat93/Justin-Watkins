@@ -457,8 +457,8 @@ header{
 	flex-wrap: wrap;
 	width: 100%;
 	min-height: 25em;
-	margin: 2em auto;
-	padding: 2em 0 4em;
+	margin: 2em auto 0;
+	padding: 2em 0 0;
 }
 
 .foot_link{
@@ -600,8 +600,8 @@ header{
 	}
 	
 	#stat_wrap{
-		margin: 3em auto;
-		width: 95%;
+		margin: 1em auto 0 1.25%;
+		width: 48%;
 	}
 
 	#list{
@@ -615,6 +615,10 @@ header{
 	
 	#cw2, #cw3{
 		display: flex;
+	}
+	
+	#con{
+		margin: 8em auto 0;
 	}
 
 	#con_img img{
@@ -641,6 +645,9 @@ header{
 
 	.foot_link{
 		width: 20%;
+		max-width: 13em;
+		max-height: 13em;
+		height: auto;
 	}
 
 	.foot_link p{
@@ -730,18 +737,26 @@ header{
 		white-space: nowrap;
 	}
 	
-	#links hr{
-		width: 98%;
-		margin: 0 auto 4em;
+	#links{
+		min-height: auto;
+		height: 26em;
+		margin: 0 auto;
+		padding: 0 auto 0;
 	}
 	
-	.link{
-		margin: 1em auto 0;
+	#links hr{
+		top: 7em;
+		width: 98%;
+		margin: 0 auto;
 	}
 	
 	#hr_wrap{
 		justify-content: space-between;
 		width: 100%;
+	}
+	
+	.foot_link{
+		margin: 8em auto 0
 	}
 	
 	#hr_wrap hr{
